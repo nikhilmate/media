@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="87" height="44">
+    <text y="44" fill="#FFF" font-family="Raleway" font-size="20" font-weight="bold">
+        <tspan dy="-28">My Email</tspan><tspan x="0" dy="1.2em">Sign In</tspan>
+    </text>
+</svg>
