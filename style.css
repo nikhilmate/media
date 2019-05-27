@@ -601,6 +601,9 @@ box-shadow: 0 0 31px 0 rgba(60, 116, 211, 0.32);
   .row-10 {
     margin: 0;
   }
+  .Shape-6 {
+    margin-left: 40px;
+  }
 }
 @media all and (max-width: 800px) {
   .Shape-6 {
