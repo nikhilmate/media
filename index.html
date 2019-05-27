@@ -15,6 +15,15 @@
   <div id="overlay"></div>
   <div id="spinner"></div>
 
+  <div class="modal">
+    <div class="alert-box">
+      <div class="box">
+        <p class="msg">this is alert</p>
+        <button class="close">Close It!</button>
+      </div>
+    </div>
+  </div>
+
   <div id="home">
     <div class="front pager" id="front">
       <div class="Rectangle-8">
@@ -375,6 +384,16 @@
         return false;
       });
 
+    });
+
+    //popup handling
+    document.querySelector('button.close').addEventListener('click', function (e) {
+      document.querySelector('body').classList.remove('pop');
+      console.log(e);
+    });
+    document.querySelector('button#start-button').addEventListener('click', function (e) {
+      document.querySelector('body').classList.add('pop');
+      console.log(e);
     });
   </script>
 </body>
