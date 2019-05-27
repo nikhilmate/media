@@ -658,6 +658,8 @@ box-shadow: 0 0 31px 0 rgba(60, 116, 211, 0.32);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-left: auto;
+    margin-right: 0;    
   }
   .col-sm-4 {
     width: 220px;
