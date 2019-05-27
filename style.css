@@ -653,19 +653,19 @@ box-shadow: 0 0 31px 0 rgba(60, 116, 211, 0.32);
     align-items: flex-end;
   }
   .rt-to-lt {
-    width: 350px;
+    width: 100%;
     padding-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-left: auto;
-    margin-right: 0;    
+    margin-right: 0;
   }
   .col-sm-4 {
     width: 220px;
     height: fit-content;
   }
-  .rt-to-lt .col-sm-8 {
+  .col-sm-8 {
     width: 100%;
   }
   .desc-container {
