@@ -137,6 +137,78 @@ body.color {
   background-color: #DDF;
   color: #000;
 }
+
+/*
+=> modal
+*/
+.modal {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1001;
+  display: none;
+}
+body.pop .modal {
+  display: block;
+}
+.alert-box {
+  width: 300px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: white;
+  padding: 30px;
+}
+body.chrome .alert-box, body.safari .alert-box {
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: auto;
+}
+body.firefox .alert-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+body.pop.edge .modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body.edge .alert-box {
+  position: absolute;
+  margin-right: auto;
+  top: auto;
+  margin-left: auto;
+  bottom: 0;
+}
+p.msg {
+  padding-bottom: 20px;
+  color: black;
+  font-family: Raleway;
+  font-size: 16px;
+}
+button.close {
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  background: #147cb8;
+  color: white;
+  font-size: 14px;
+  font-family: Raleway;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+button.close:hover {
+  background: #ff9100;
+}
+
+
 /*
 => home
 
