@@ -391,9 +391,12 @@
       document.querySelector('body').classList.remove('pop');
       console.log(e);
     });
-    document.querySelector('button#start-button').addEventListener('click', function (e) {
+    let btn = document.querySelectorAll('button#start-button');
+    btn.forEach(element => {
+      element.addEventListener('click', function (e) {
       document.querySelector('body').classList.add('pop');
       console.log(e);
+    });
     });
   </script>
 </body>
