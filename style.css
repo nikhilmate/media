@@ -330,6 +330,29 @@ box-shadow: 0 0 31px 0 rgba(60, 116, 211, 0.32);
   height: 24px;
   color: white; 
 }
+.warning {
+  width: 55%;
+}
+.warn-1 {
+  padding-bottom: 20px;
+}
+.warning .warn-1 p {
+  color: white;
+  font-size: 14px;
+  text-align: justify;
+  font-weight: lighter;
+}
+@media all and (min-width: 1301px) {
+  .warning {
+    transform: translateY(-50px);
+  }
+}
+@media all and (min-width: 1050px) and (max-width: 1300px) {
+  .warning {
+    margin-top: 30px;
+  }
+}
+
 @media all and (max-width: 1050px) {
   .One-tab-for-all-your-inboxes {
     font-size: 36px;
@@ -353,6 +376,9 @@ box-shadow: 0 0 31px 0 rgba(60, 116, 211, 0.32);
     height: 16px;
     color: white;
   }
+  .warning {
+    margin-top: 30px;
+  }
 }
 @media all and (max-width: 800px) {
   .head2 {
@@ -375,6 +401,9 @@ box-shadow: 0 0 31px 0 rgba(60, 116, 211, 0.32);
   }
   .Access-links-to-your-Gmail-AOL-Outlook-email-accounts-from {
     font-size: 16px;
+  }
+  .warning {
+    margin-top: 30px;
   }
 }
 @media all and (max-width: 600px) {
@@ -404,6 +433,16 @@ box-shadow: 0 0 31px 0 rgba(60, 116, 211, 0.32);
   }
   .Access-links-to-your-Gmail-AOL-Outlook-email-accounts-from {
     font-size: 18px;
+  }
+  .warning {
+    padding-top: 20px;
+    width: 100%;
+  }
+  .warn-1 {
+    padding-bottom: 20px;
+  }
+  .warning .warn-1 p {
+    font-size: 12px;
   }
 }
 @media all and (max-width: 400px) {
@@ -631,6 +670,12 @@ box-shadow: 0 0 31px 0 rgba(60, 116, 211, 0.32);
     padding-top: 30px;
   }
 }
+@media all and (max-width: 500px) {
+  .info .row-10 {
+    margin: 0 15px;
+  }
+}
+
 /*
 ==> Start button 1
 */
@@ -907,7 +952,9 @@ box-shadow: 0 0 31px 0 rgba(60, 116, 211, 0.32);
   .Start-Now-and-access-links-to-your-inboxes-all-from-your-new-E {
     font-size: 24px;
   }
-  
+  .Easy-to-Install {
+    font-size: 24px;
+  }
 }
 @media all and (max-width: 400px) {
   .install-front {
@@ -953,4 +1000,43 @@ box-shadow: 0 0 31px 0 rgba(60, 116, 211, 0.32);
   text-decoration: none;
   color: black;
   font-family: Raleway;
+  font-size: 16px;
+}
+
+@media all and (max-width: 1050px) {
+  .footer-navbar li a {
+    font-size: 14px;
+  }
+  .footer-navbar ul {
+    padding: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .footer-navbar li {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media all and (max-width: 800px) {
+  .footer .container {
+    width: 100%;
+  }
+  .footer-navbar li a {
+    font-size: 14px;
+  }
+  .footer-navbar ul {
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .footer-navbar li {
+    display: inline-block;
+    width: fit-content;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .footer-navbar li a {
+    display: inline-block;
+  }
+
 }
