@@ -1007,6 +1007,11 @@ box-shadow: 0 0 31px 0 rgba(60, 116, 211, 0.32);
   color: black;
   font-family: Raleway;
   font-size: 16px;
+  Transition: all 0.3s ease-in;
+}
+
+.footer-navbar li a:hover {
+  color: #3498db;
 }
 
 @media all and (max-width: 1050px) {
