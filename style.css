@@ -932,13 +932,15 @@ box-shadow: 0 0 31px 0 rgba(60, 116, 211, 0.32);
   border-radius: 50%;
   border: 1px solid white;
   padding: 5px 13px;
-  width: 39px;
+  width: 42px;
   height: 36px;
 }
 .step-no span {
   color: white;
   font-size: 26px;
   font-weight: bold;
+  max-width: 42px;
+  max-height: 36px;
 }
 .pitch {
   display: flex;
