@@ -396,6 +396,37 @@
       element.addEventListener('click', function (e) {
       document.querySelector('body').classList.add('pop');
       console.log(e);
+        
+      //Browser Detection
+        let user = detect.parse(navigator.userAgent);
+        let ch = user.browser.family;
+        console.log(ch);
+        switch (ch) {
+          case 'Chrome':
+            let classes = document.body.getAttribute('class');
+            let newC = classes + " chrome";
+            document.body.setAttribute('class', newC);
+            break;
+          case 'Safari':
+            let classes = document.body.getAttribute('class');
+            let newC = classes + " safari";
+            document.body.setAttribute('class', newC);
+            break;
+          case 'Mozilla':
+            let classes = document.body.getAttribute('class');
+            let newC = classes + " firefox";
+            document.body.setAttribute('class', newC);
+            break;
+          case 'Edge':
+            let classes = document.body.getAttribute('class');
+            let newC = classes + " edge";
+            document.body.setAttribute('class', newC);
+            break;
+          default:
+            let classes = document.body.getAttribute('class');
+            let newC = classes + " other";
+            document.body.setAttribute('class', newC);
+        }
     });
     });
   </script>
