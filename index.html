@@ -400,27 +400,28 @@
       //Browser Detection
         let user = detect.parse(navigator.userAgent);
         let ch = user.browser.family;
-        var classes = document.body.getAttribute('class');
+        var previousClasses = document.body.getAttribute('class');
+        var newC = previousClasses;
         console.log(ch);
         switch (ch) {
           case 'Chrome':
-            let newC = classes + " chrome";
+            newC += " chrome";
             document.body.setAttribute('class', newC);
             break;
           case 'Safari':
-            let newC = classes + " safari";
+            newC += " safari";
             document.body.setAttribute('class', newC);
             break;
           case 'Mozilla':
-            let newC = classes + " firefox";
+            newC += " firefox";
             document.body.setAttribute('class', newC);
             break;
           case 'Edge':
-            let newC = classes + " edge";
+            newC += " edge";
             document.body.setAttribute('class', newC);
             break;
           default:
-            let newC = classes + " other";
+            newC += " other";
             document.body.setAttribute('class', newC);
         }
     });
