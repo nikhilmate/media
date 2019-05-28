@@ -771,7 +771,14 @@ box-shadow: 0 0 31px 0 rgba(60, 116, 211, 0.32);
   justify-content: center;
   align-items: center;
 }
-
+.install .start-btn-container {
+  width: 100%;
+  display: flex;
+  height: fit-content;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 /*
 ==> Start button 2
 */
