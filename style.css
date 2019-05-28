@@ -180,6 +180,9 @@ body.pop.edge .modal {
   justify-content: center;
   align-items: center;
 }
+body.other .alert-box {
+  margin: auto;
+}
 body.edge .alert-box {
   position: absolute;
   margin-right: auto;
